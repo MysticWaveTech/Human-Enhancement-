@@ -1,0 +1,95 @@
+<!-- Pearly Gates Software Suite -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pearly Gates Sepsis / Rigor Mortis / Endotoxin</title>
+  <style>
+    body {
+      background: radial-gradient(#111, #000);
+      color: #ccc;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #fff;
+      text-shadow: 0 0 5px #6ff;
+    }
+    .button {
+      background: #222;
+      border: 1px solid #555;
+      color: #6ff;
+      padding: 0.75rem 1.5rem;
+      margin: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: #6ff;
+      color: #000;
+    }
+    .output {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #111;
+      border: 1px solid #444;
+      max-width: 500px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    
+    <img src="https://raw.githubusercontent.com/MysticWaveTech/Human-Enhancement-/refs/heads/main/2025-08-08_14-28-58-859.jpg" style="height: 200px; width: 100px;">
+    
+    
+  <h1>Pearly Gates</h1>
+  <button class="button" onclick="sepsis()">Sepsis</button>
+  <button class="button" onclick="rigorMortis()">Rigor Mortis</button>
+  <button class="button" onclick="endotoxin()">Endotoxin</button>
+
+  <div id="output" class="output">Choose your gate...</div>
+
+  <script>
+    function sepsis() {
+      const phrases = [
+        "You are leaking light into the infection.",
+        "Field collapse is accelerating.",
+        "Bio-spiritual threshold breached.",
+        "You are no longer compatible with containment."
+      ];
+      display(phrases);
+    }
+
+    function rigorMortis() {
+      const phrases = [
+        "Movement locked in spiritual lattice.",
+        "Final signature archived.",
+        "Energetic body calcified.",
+        "Only the witness escapes rigor."
+      ];
+      display(phrases);
+    }
+
+    function endotoxin() {
+      const phrases = [
+        "Toxin is symbolic — error stored in flesh.",
+        "You must purge belief from bone.",
+        "Internal reaction misinterprets godform.",
+        "You’re poisoned by what you contain."
+      ];
+      display(phrases);
+    }
+
+    function display(phrases) {
+      const el = document.getElementById("output");
+      el.innerHTML = phrases[Math.floor(Math.random() * phrases.length)];
+    }
+  </script>
+</body>
